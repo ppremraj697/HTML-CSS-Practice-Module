@@ -1,0 +1,33 @@
+Missed:
+
+1. Main: The <main> HTML element represents the dominant content of the <body> of a document. 
+	   The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+
+2. Footer: The <footer> HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. 
+	    A <footer> typically contains information about the author of the section, copyright data or links to related documents.
+
+Learnt:
+
+1. Section: The <section> HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it.
+		 Sections should always have a heading, with very few exceptions.
+ 
+2. Fieldset: The <fieldset> HTML element is used to group several controls as well as labels (<label>) within a web form.
+
+3. Legend: The <legend> HTML element represents a caption for the content of its parent <fieldset>.
+
+4. Figure: The <figure> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. 
+		  The figure, its caption, and its contents are referenced as a single unit.
+
+5. Figcaption: The <figcaption> HTML element represents a caption or legend describing the rest of the contents of its parent <figure> element.
+
+6. id: The id global attribute defines an identifier (ID) which must be unique in the whole document.
+	Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS).
+
+
+
+
+Need Improvement:
+
+1. Form and related tags and attributes
+
+2. About attributes of meta tag
