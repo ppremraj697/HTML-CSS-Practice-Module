@@ -1,0 +1,17 @@
+body{
+    background-image: url(https://media.istockphoto.com/id/886506814/photo/application-choice-survey-concepts-corporate-background-website-cover.jpg?s=170667a&w=0&k=20&c=e_dmt9Pi2UGWx3gv39h97Zb622TR6ChDiqeXtDNDkHo=);
+}
+
+h1, p{
+    text-align: center;
+    color:aqua;
+}
+
+label{
+    color:white;
+}
+input{
+    display:block;
+    width:200px;
+}
+
