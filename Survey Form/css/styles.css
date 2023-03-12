@@ -1,17 +1,98 @@
-body{
-    background-image: url(https://media.istockphoto.com/id/886506814/photo/application-choice-survey-concepts-corporate-background-website-cover.jpg?s=170667a&w=0&k=20&c=e_dmt9Pi2UGWx3gv39h97Zb622TR6ChDiqeXtDNDkHo=);
+body {
+    background-image: url("../img/BackyardPalms.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
 }
 
-h1, p{
+.container {
+    background-color: grey;
+    margin: auto;
+    width: 40%;
+    max-width: 800px;
+    min-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
     text-align: center;
-    color:aqua;
 }
 
-label{
-    color:white;
-}
-input{
-    display:block;
-    width:200px;
+
+/* Attribute Selector */
+input[type="submit"] {
+    display: block;
+    margin: auto;
 }
 
+.bio label,
+.bio input {
+    display: block;
+    margin: 5px 0;
+}
+
+.thank-you {
+    text-align: center;
+}
+
+.day-visited,
+.dinein-takeout {
+    display: inline-block;
+    width: 250px;
+}
+
+label {
+    margin-right: 15px;
+    /* display: block; */
+}
+
+.about-us {
+    text-align: center;
+}
+
+.contact-us {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+
+}
+
+.visit-again {
+    display: inline-block;
+    width: 49%;
+    border-right: 3px solid white;
+    text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+    background: #55ACEE;
+    color: white;
+}
+
+footer {
+    background-color: purple;
+}

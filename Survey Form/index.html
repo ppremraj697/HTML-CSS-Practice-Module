@@ -2,81 +2,187 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Survey</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Survey</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <h1>Restaurant Survey Form</h1>
-    <h2>Please Review Us</h2>
-    <p>Please let us know how was the food and service.</p>
-    <hr>
-    <form>
-        <fieldset>
-            <label for="visit-day">Day Visited<input type="date" id="visit-day"></label>
-            <p>Dine In/ Take Out</p>
-            <label><input type="radio" name="dinein-takeout">Dine In</label>
-            <label><input type="radio" name="dinein-takeout">Take Out </label>
-        </fieldset>
+        <main>
+                <div class="container">
+                        <h1 id="title">Backyard Palms Survey Form</h1>
+                        <h2>Please Review Us</h2>
+                        <p id="description">Please let us know how was the food and service.</p>
+                        <hr>
+                        <form id="survey-form">
+                                <fieldset class="fieldset-1">
+                                        <div class="bio">
+                                                <label id="name-label">Name<input type="text" id="name"
+                                                                placeholder="Enter your name here" required></label>
+                                                <label id="email-label">Email<input type="email" id="email"
+                                                                placeholder="abc123@gmail.com" required></label>
+                                                <label id="number-label">Age<small>(optional)</small><input
+                                                                type="number" id="number" min="13" max="120"
+                                                                placeholder="Enter your age here"></label>
+
+                                        </div>
+                                </fieldset>
+                                <hr>
+                                <fieldset class="fieldset-2">
+                                        <div>
+                                                <p class="day-visited">Day Visited</p>
+                                                <label for="visit-day"><input type="date" id="visit-day"></label>
+                                        </div>
+                                        <div>
+                                                <p class="dinein-takeout">Dine In/ Take Out</p>
+                                                <label for="dinein-takeout"><input type="radio" id="dinein-takeout"
+                                                                name="dinein-takeout" value="dine-in">Dine In</label>
+                                                <label for="dinein-takeout"><input type="radio" id="dinein-takeout"
+                                                                name="dinein-takeout" value="take-out">Take Out </label>
+                                        </div>
+                                </fieldset>
+                                <hr>
+                                <fieldset class="fieldset-3">
+                                        <div>
+                                                <p>Food Quality</p>
+                                                <label for="food-quality"><input type="radio" id="food-quality"
+                                                                name="food-quality" value="excellent">Excellent</label>
+                                                <label for="food-quality"><input type="radio" id="food-quality"
+                                                                name="food-quality" value="good">Good</label>
+                                                <label for="food-quality"><input type="radio" id="food-quality"
+                                                                name="food-quality" value="average">Average</label>
+                                                <label for="food-quality"><input type="radio" id="food-quality"
+                                                                name="food-quality"
+                                                                value="dissatisfied">Dissatisfied</label>
+
+                                                <p>Overall Service Quality</p>
+                                                <label for="overall-service-quality"><input type="radio"
+                                                                id="overall-service-quality"
+                                                                name="overall-service-quality"
+                                                                value="excellent">Excellent</label>
+                                                <label for="overall-service-quality"><input type="radio"
+                                                                id="overall-service-quality"
+                                                                name="overall-service-quality" value="good">Good</label>
+                                                <label for="overall-service-quality"><input type="radio"
+                                                                id="overall-service-quality"
+                                                                name="overall-service-quality"
+                                                                value="average">Average</label>
+                                                <label for="overall-service-quality"><input type="radio"
+                                                                id="overall-service-quality"
+                                                                name="overall-service-quality"
+                                                                value="dissatisfied">Dissatisfied</label>
+
+                                                <p>Cleanliness</p>
+                                                <label for="cleanliness"><input type="radio" id="cleanliness"
+                                                                name="cleanliness" value="excellent">Excellent</label>
+                                                <label for="cleanliness"><input type="radio" id="cleanliness"
+                                                                name="cleanliness" value="good">Good</label>
+                                                <label for="cleanliness"><input type="radio" id="cleanliness"
+                                                                name="cleanliness" value="average">Average</label>
+                                                <label for="cleanliness"><input type="radio" id="cleanliness"
+                                                                name="cleanliness"
+                                                                value="dissatisfied">Dissatisfied</label>
+
+                                                <p>Order Accuracy</p>
+                                                <label for="order-accuracy"><input type="radio" id="order-accuracy"
+                                                                name="order-accuracy"
+                                                                value="excellent">Excellent</label>
+                                                <label for="order-accuracy"><input type="radio" id="order-accuracy"
+                                                                name="order-accuracy" value="good">Good</label>
+                                                <label for="order-accuracy"><input type="radio" id="order-accuracy"
+                                                                name="order-accuracy" value="average">Average</label>
+                                                <label for="order-accuracy"><input type="radio" id="order-accuracy"
+                                                                name="order-accuracy"
+                                                                value="dissatisfied">Dissatisfied</label>
+
+                                                <p>Speed of Service</p>
+                                                <label for="speed-of-service"><input type="radio" id="speed-of-service"
+                                                                name="speed-of-service"
+                                                                value="excellent">Excellent</label>
+                                                <label for="speed-of-service"><input type="radio" id="speed-of-service"
+                                                                name="speed-of-service" value="good">Good</label>
+                                                <label for="speed-of-service"><input type="radio" id="speed-of-service"
+                                                                name="speed-of-service" value="average">Average</label>
+                                                <label for="speed-of-service"><input type="radio" id="speed-of-service"
+                                                                name="speed-of-service"
+                                                                value="dissatisfied">Dissatisfied</label>
+
+                                                <p>Value</p>
+                                                <label for="value"><input type="radio" id="value" name="value"
+                                                                value="excellent">Excellent</label>
+                                                <label for="value"><input type="radio" id="value" name="value"
+                                                                value="good">Good</label>
+                                                <label for="value"><input type="radio" id="value" name="value"
+                                                                value="average">Average</label>
+                                                <label for="value"><input type="radio" id="value" name="value"
+                                                                value="dissatisfied">Dissatisfied</label>
+
+                                                <p>Overall Experience</p>
+                                                <label for="overall-experience"><input type="radio"
+                                                                id="overall-experience" name="overall-experience"
+                                                                value="excellent">Excellent</label>
+                                                <label for="overall-experience"><input type="radio"
+                                                                id="overall-experience" name="overall-experience"
+                                                                value="good">Good</label>
+                                                <label for="overall-experience"><input type="radio"
+                                                                id="overall-experience" name="overall-experience"
+                                                                value="average">Average</label>
+                                                <label for="overall-experience"><input type="radio"
+                                                                id="overall-experience" name="overall-experience"
+                                                                value="dissatisfied">Dissatisfied</label>
+
+                                                <p>How did you discover our restaurant?</p>
+                                                <select id="dropdown">
+                                                        <option value="1">Select an option</option>
+                                                        <option value="2">From Friends</option>
+                                                        <option value="3">Instagram Ads</option>
+                                                        <option value="4">Google Search</option>
+                                                        <option value="5">Visited Previously</option>
+                                                        <option value="6">Others</option>
+                                                </select>
+
+                                                <p>What services offered by us liked you the most?</p>
+                                                <label for="service"><input type="checkbox" id="service"
+                                                                value="ambience">Ambience</label>
+                                                <label for="service"><input type="checkbox" id="service"
+                                                                value="FoodAndBeverages">Food and
+                                                        Beverages</label>
+                                                <label for="service"><input type="checkbox" id="service"
+                                                                value="DanceFloor">Dance Floor</label>
+                                                <label for="service"><input type="checkbox" id="service"
+                                                                value="LiveMusic">Live Music</label>
+                                        </div>
+                                        <p>Any comments, questions or suggestions?</p>
+                                        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                                </fieldset>
+                                <label for="submit"><input type="submit" id="submit" name="submit"></label>
+                        </form>
+                        <h2 class="thank-you">Thank You</h2>
+                </div>
+        </main>
         <hr>
-        <fieldset>
-            <p>Food Quality</p>
-            <label><input type="radio">Excellent</label>
-            <label><input type="radio">Good</label>
-            <label><input type="radio">Average</label>
-            <label><input type="radio">Dissatisfied</label>
+        <footer>
+                <div class="about-us">
+                        <h2>About Us</h2>
+                        <p>Ravet BRTS Road, Opp Astoria Royals, Mukai Chowk, Pune-412101</p>
+                </div>
+                <hr>
+                <div class="visit-again">
+                        <h3>Visit Again</h3>
+                        <p>Monday - Friday: 11AM - 12AM</p>
+                        <p>Saturday - Sunday: 12PM - 1AM</p>
+                </div>
+                <div class="contact-us">
+                        <h3>Contact Us</h3>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                </div>
 
-            <p>Overall Service Quality</p>
-            <label><input type="radio">Excellent</label>
-            <label><input type="radio">Good</label>
-            <label><input type="radio">Average</label>
-            <label><input type="radio">Dissatisfied</label>
-
-            <p>Cleanliness</p>
-            <label><input type="radio">Excellent</label>
-            <label><input type="radio">Good</label>
-            <label><input type="radio">Average</label>
-            <label><input type="radio">Dissatisfied</label>
-
-            <p>Order Accuracy</p>
-            <label><input type="radio">Excellent</label>
-            <label><input type="radio">Good</label>
-            <label><input type="radio">Average</label>
-            <label><input type="radio">Dissatisfied</label>
-
-            <p>Speed of Service</p>
-            <label><input type="radio">Excellent</label>
-            <label><input type="radio">Good</label>
-            <label><input type="radio">Average</label>
-            <label><input type="radio">Dissatisfied</label>
-
-            <p>Value</p>
-            <label><input type="radio">Excellent</label>
-            <label><input type="radio">Good</label>
-            <label><input type="radio">Average</label>
-            <label><input type="radio">Dissatisfied</label>
-
-            <p>Overall Experience</p>
-            <label><input type="radio">Excellent</label>
-            <label><input type="radio">Good</label>
-            <label><input type="radio">Average</label>
-            <label><input type="radio">Dissatisfied</label>
-
-            <label for="feedback">Any comments, questions or suggestions?<input type="textarea"></label>
-        </fieldset>
-        <hr>
-        <fieldset>
-            <label>Name <input type="text"></label>
-            <label>Age <input type="number"></label>
-            <label>Email <input type="email" placeholder="abc123@gmail.com"></label>
-            <label><input type="submit"></label>
-
-        </fieldset>
-
-    </form>
-
+        </footer>
 </body>
 
 </html>
